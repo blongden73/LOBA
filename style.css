@@ -1,0 +1,218 @@
+@font-face {
+font-family: 'Domaine Disp Cond';
+src: url('DomaineDispCond-Regular.woff2') format('woff2'),
+    url('DomaineDispCond-Regular.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+font-display: swap;
+}
+@font-face {
+    font-family: 'Domaine Disp Cond';
+    src: url('DomaineDispCond-Regular.woff2') format('woff2'),
+        url('DomaineDispCond-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: 'Druk Wide Cyr';
+    src: url('DrukWideCyr-Medium.woff2') format('woff2'),
+        url('DrukWideCyr-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cactus Jack Alternate';
+    src: url('CactusJackAlternate.woff2') format('woff2'),
+        url('CactusJackAlternate.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body {
+    background-color: #E4D7D7;
+    padding: 0;
+    margin: 0;
+    font-family: 'Domaine Disp Cond';
+    font-size: 22px;
+}
+h2,h3 {
+    font-weight: 100;
+}
+.header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.header.about .center.logo a svg path{ 
+    fill: #000;
+}
+.header.about ul{
+    color: #000;
+}
+.header.about .center.logo .reveal-logo-hover {
+    color: #000;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.strip-three {
+    padding-top: 240px;
+    padding-bottom: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.strip-three.padding-top {
+    padding-top: 0;
+}
+
+.col {
+    padding: 1vw;
+}
+
+.col img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.col.three {
+    width: 30%;
+}
+
+.col.six {
+    width: 60%;
+}
+
+.col.full {
+    width: 100%;
+}
+
+.reveal-logo-hover {
+    color: #fff;
+}
+.footer {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    bottom: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+.reveal-logo-hover {
+    opacity: 0;
+    transform: translateY(-10px);
+    text-align: center;
+}
+.reveal-logo-hover.hoverd {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+}
+.header ul {
+    display: flex;
+    list-style: none;
+    color: #fff;
+}
+.header ul li{
+    margin-right: 20px;
+}
+a {
+    cursor: pointer;
+}
+.about-description a {
+   border-bottom: 1px solid #000;  
+}
+.header ul li:hover{
+    border-bottom: 1px solid #000;
+}
+.header .flex {
+    display: flex;
+    justify-content: space-between;
+}
+.center svg path{
+    fill: #fff;
+}
+.video-background-mobile {
+    display: none;
+}
+.video-background iframe{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.about-description {
+    padding-top: 200px;
+    max-width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 36px;
+    padding-bottom: 200px;
+    border-bottom: 1px solid #000;
+}
+
+@media (max-width: 599px) { 
+    .video-background {
+        display: none;
+    }
+    .header .flex .left {
+        display: none;
+    }
+    .header .flex .right {
+        display: none;
+    }
+    .header .flex .center {
+        width: 100%;
+    }
+    .header .flex .center svg{
+        width: 100%;
+        height: auto;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .strip-three {
+        padding-top: 50px;
+        padding-left: 17px;
+        padding-right: 24px;
+        padding-bottom: 50px;
+    }
+
+    .col.three, .col.six {
+        width: 100%;
+    }
+
+    .strip-three .col img{
+        width: 100%;
+        height: auto;
+    }
+
+    .video-background-mobile {
+        display: block;
+    }
+}
