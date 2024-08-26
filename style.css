@@ -31,6 +31,27 @@ font-display: swap;
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('NeueMontreal-Bold.woff2') format('woff2'),
+        url('NeueMontreal-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('NeueMontreal-Regular.woff2') format('woff2'),
+        url('NeueMontreal-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 a {
     color: inherit;
     text-decoration: none;
@@ -229,4 +250,138 @@ a {
     .video-background-mobile {
         display: block;
     }
+}
+
+.beta .header {
+    position: relative;
+}
+
+.beta .header .logo {
+    width: 100%;
+}
+
+.beta {
+    background-color: #000;
+    font-family: 'Neue Montreal' !important;
+    font-weight: 400 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.beta h5 {
+    font-weight: 400 !important;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+.project-info {
+    display: flex;
+    gap: 16px;
+    color: #fff;
+}
+
+.main-projec {
+    position: relative;
+}
+
+.projects {
+    padding: 24px;
+}
+
+.intro {
+    padding: 24px;
+    display: flex;
+    position: relative;
+    z-index: 200;
+}
+
+.menu {
+    width: 46%;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li{
+    margin-right: 15px;
+}
+
+.intro_inner {
+    color: #fff;
+    width: 30%;
+}
+
+.intro_inner h3 {
+    margin: 0;
+}
+
+.intro.sticky {
+    position: sticky;
+    top: 0;
+    margin-bottom: -68px;
+    background-color: #000;
+    z-index: 100;
+}
+
+.flex-project {
+    display: flex;
+}
+
+.flex-project > div {
+    width: 50%;
+}
+
+.projects > div {
+    margin-bottom: 60px;
+}
+
+.projects .flex-project > div {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.flex-project > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.what-we-do {
+    border-top: 1px solid #fff;
+    color: #fff;
+}
+
+.wwd-list h5 {
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.mini-about {
+    border-top: 1px solid #fff;
+    margin-top: 40px;
+}
+
+.mini-about p {
+    font-weight: 400 !important;
+    letter-spacing: 1px;
+    font-size: 13px;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+.no-marg{
+    margin-top: 0;
+    margin-bottom: 0;
+   }
+
+.no-marg + p{
+ margin-top: 0 !important;
 }
