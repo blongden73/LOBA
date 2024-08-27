@@ -318,6 +318,16 @@ a {
     width: 30%;
 }
 
+.intro_inner.about {
+    width: 45%;
+}
+
+.services {
+    border-top: 1px solid #fff;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
 .intro_inner h3 {
     margin: 0;
 }
@@ -384,4 +394,21 @@ a {
 
 .no-marg + p{
  margin-top: 0 !important;
+}
+
+.footer-beta {
+    border-top: 1px solid #fff;
+}
+
+.footer-beta .left ul {
+    display: flex;
+    color: #fff;
+    list-style: none;
+    padding-left: 24px;
+}
+
+.footer-beta .left ul li {
+    margin-right: 10px;
+    letter-spacing: 1px;
+    font-size: 13px;
 }
