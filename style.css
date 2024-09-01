@@ -210,9 +210,6 @@ a {
 }
 
 @media (max-width: 599px) { 
-    .video-background {
-        display: none;
-    }
     .header .flex .left {
         display: none;
     }
@@ -274,10 +271,37 @@ a {
     font-size: 13px;
 }
 
+.projects-title {
+    color: #fff;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 576px) {
+        font-size: 24px;
+    }
+}
+
 .project-info {
     display: flex;
     gap: 16px;
     color: #fff;
+    
+    @media (max-width: 576px) {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
+
+.project-info h5 {
+    @media (max-width: 576px) {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.project-info {
+    margin-top: 10px;
 }
 
 .main-projec {
@@ -293,6 +317,10 @@ a {
     display: flex;
     position: relative;
     z-index: 200;
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+    }
 }
 
 .menu {
@@ -300,6 +328,10 @@ a {
     color: #fff;
     letter-spacing: 1px;
     font-size: 13px;
+
+    @media (max-width: 576px) {
+        width: 100%;
+    }
 }
 
 .menu a:hover {
@@ -324,6 +356,8 @@ a {
 
 .intro {
     pointer-events: none;
+
+
 }
 
 .intro.sticky {
@@ -337,6 +371,10 @@ a {
 .intro_inner {
     color: #fff;
     width: 30%;
+
+    @media (max-width: 576px) {
+        width: 100%;
+    }
 }
 
 .intro_inner.about {
@@ -359,15 +397,27 @@ a {
     margin-bottom: -68px;
     background-color: #000;
     z-index: 100;
+
+    @media (max-width: 576px) {
+        margin-bottom: 20px;
+    }
 }
 
 .flex-project {
     display: flex;
     gap: 20px;
+
+    @media (max-width: 576px) {
+       flex-direction: column;
+    }
 }
 
 .flex-project > div {
     width: 50%;
+
+    @media (max-width: 576px) {
+        width: 100%;
+    }
 }
 
 .projects > div {
@@ -378,6 +428,11 @@ a {
     aspect-ratio: 16 / 9;
     overflow: hidden;
     padding-bottom: 50px;
+
+    @media (max-width: 576px) {
+        aspect-ratio: unset;
+        padding-bottom: 0;
+     }
 }
 
 .projects .flex-project > div.about {
