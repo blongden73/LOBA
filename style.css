@@ -379,6 +379,10 @@ a {
 
 .intro_inner.about {
     width: 45%;
+
+    @media (max-width: 576px) {
+        width: 100%;
+    }
 }
 
 .services {
@@ -509,6 +513,11 @@ a:hover {
 
 .footer-beta .right {
     padding-right: 24px;
+
+    @media (max-width: 576px) {
+        padding-left: 24px;
+    }
+
 }
  
 .footer-beta .left ul {
