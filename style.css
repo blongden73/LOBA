@@ -330,6 +330,10 @@ a {
     pointer-events: all;
 }
 
+.intro.click {
+    pointer-events: all;
+}
+
 .intro_inner {
     color: #fff;
     width: 30%;
@@ -359,6 +363,7 @@ a {
 
 .flex-project {
     display: flex;
+    gap: 20px;
 }
 
 .flex-project > div {
@@ -374,6 +379,10 @@ a {
     overflow: hidden;
     padding-bottom: 50px;
 }
+
+.projects .flex-project > div.about {
+    aspect-ratio: unset;
+} 
 
 .flex-project > div img {
     width: 100%;
@@ -394,6 +403,7 @@ a {
 .mini-about {
     border-top: 1px solid #fff;
     margin-top: 40px;
+    padding-right: 24px;
 }
 
 .mini-about p {
@@ -404,10 +414,35 @@ a {
     text-transform: uppercase;
 }
 
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.flex-project .right {
+    position: relative;
+}
+
+.link-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
 .no-marg{
     margin-top: 0;
     margin-bottom: 0;
    }
+
+.no-marg-top {
+    margin-top: 0;
+}
 
 .no-marg + p{
  margin-top: 0 !important;
