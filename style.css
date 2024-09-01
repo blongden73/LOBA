@@ -302,6 +302,15 @@ a {
     font-size: 13px;
 }
 
+.menu a:hover {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+.contact {
+    color: #fff;
+}
+
 .menu ul {
     list-style: none;
     display: flex;
@@ -311,6 +320,14 @@ a {
 
 .menu ul li{
     margin-right: 15px;
+}
+
+.intro {
+    pointer-events: none;
+}
+
+.intro.sticky {
+    pointer-events: all;
 }
 
 .intro_inner {
@@ -400,6 +417,10 @@ a {
     border-top: 1px solid #fff;
 }
 
+.footer-beta .right {
+    padding-right: 24px;
+}
+ 
 .footer-beta .left ul {
     display: flex;
     color: #fff;
