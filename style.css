@@ -634,6 +634,15 @@ a:hover {
     }
 }
 
+.full-width.first {
+    margin-top: 90px;
+    margin-bottom: 50px;
+
+    @media (max-width: 576px) {
+        margin-top: 20px;
+    }
+}
+
 .flex-two-col > * {
     width: calc(50% - 10px);
 
@@ -665,4 +674,20 @@ a:hover {
     @media (max-width: 576px) {
         margin-top: 20px;
     }
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.sj-back {
+    background-color: #F7F4F1;
+}
+
+.full-width img {
+    width: 100%;
+    height: auto;
 }
