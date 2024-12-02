@@ -628,10 +628,24 @@ a:hover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+
+    @media (max-width: 576px) {
+       flex-wrap: wrap;
+    }
 }
 
 .flex-two-col > * {
     width: calc(50% - 10px);
+
+    @media (max-width: 576px) {
+        width: 100%;
+    }
+}
+
+.flex-left {
+    @media (max-width: 576px) {
+        margin-bottom: 20px;
+     }
 }
 
 .flex-two-col > * img {
