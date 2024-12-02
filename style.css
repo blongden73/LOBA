@@ -491,6 +491,10 @@ a:hover {
     position: relative;
 }
 
+.flex-project .left {
+    position: relative;
+}
+
 .link-window {
     position: absolute;
     top: 0;
@@ -618,4 +622,33 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 80%;
+}
+
+.flex-two-col {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.flex-two-col > * {
+    width: calc(50% - 10px);
+}
+
+.flex-two-col > * img {
+    width: 100%;
+    height: auto;
+}
+
+.full-width {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.flex-project-wrapper {
+    margin-top: 90px;
+    margin-bottom: 50px;
+
+    @media (max-width: 576px) {
+        margin-top: 20px;
+    }
 }
