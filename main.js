@@ -4,7 +4,7 @@ var body = document.body;
 
 var scroller = {
   target: document.querySelector("#scroll-container"),
-  ease: 0.02, // <= scroll speed
+  ease: 0, // <= scroll speed
   endY: 0,
   y: 0,
   resizeRequest: 1,
@@ -67,3 +67,16 @@ function onResize() {
     requestId = requestAnimationFrame(updateScroller);
   }
 }
+
+window.addEventListener('scroll', () => {
+  const targetElement = document.querySelector('.intro'); // Replace with your element's selector
+  const logo = document.querySelector('.second-logo');
+  const rect = targetElement.getBoundingClientRect();
+
+  if (rect.top <= 0) {
+    logo.classList.add('sticky');
+  } else {
+    logo.classList.remove('sticky');
+  }
+});
+
